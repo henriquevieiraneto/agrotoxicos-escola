@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F9F7F3; /* Fundo suave */
+    color: #333333; /* Cor do texto principal */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50; /* Um verde esperança para o header principal */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 { /* Este H1 é da introdução se você quiser um título diferente */
+    margin: 0;
+    font-size: 2.2em;
+    padding-bottom: 15px; /* Espaçamento abaixo do título */
+    color: #F9F7F3; /* Cor do título para combinar com o fundo principal */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Evita quebras de linha dentro do link */
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #2E8B57; /* Verde mais escuro no hover/ativo */
+    border-radius: 4px;
+}
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #FFFFFF; /* Fundo branco para o conteúdo principal */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h1 { /* Título principal da página de introdução */
+    color: #4CAF50; /* Verde para o título principal */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.introducao-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.introducao-content strong {
+    color: #B22222; /* Para destacar as palavras-chave na introdução */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #f0f0f0;
+    color: #666666;
+    font-size: 0.9em;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 2em;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+/* Adicione este bloco CSS em todos os seus arquivos CSS */
+
+.sources {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: left; /* Alinhar texto à esquerda dentro da seção */
+    font-size: 0.95em;
+    color: #555555;
+}
+
+.sources h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.sources ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.sources ul li {
+    margin-bottom: 5px;
+}
+
+.sources ul li a {
+    color: #0066cc; /* Um azul mais padrão para links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sources ul li a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
