@@ -66,6 +66,42 @@ main h1 { /* Título principal da página de introdução */
     font-size: 2.5em;
 }
 
+/* Estilos para a seção do vídeo */
+.video-section {
+    text-align: center; /* Centraliza o título e o container do vídeo */
+    margin-bottom: 30px;
+}
+
+.video-section h2 {
+    color: #4CAF50; /* Cor do tema principal */
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.video-container {
+    position: relative;
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+    padding-bottom: 56.25%; /* Proporção 16:9 (altura é 56.25% da largura) */
+    height: 0; /* A altura real será definida pelo padding-bottom */
+    overflow: hidden; /* Garante que nada saia do contêiner */
+    background-color: #000; /* Fundo preto enquanto o vídeo carrega */
+    border-radius: 8px; /* Arredondar as bordas do container do vídeo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombra para destacar */
+    margin: 0 auto; /* Centraliza o contêiner */
+    max-width: 800px; /* Largura máxima para o vídeo */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa 100% da largura do contêiner */
+    height: 100%; /* Ocupa 100% da altura do contêiner */
+    object-fit: cover; /* Preenche o espaço sem distorção, cortando se necessário */
+    border: none;
+}
+
+
 .introducao-content p {
     font-size: 1.1em;
     margin-bottom: 20px;
@@ -85,7 +121,44 @@ footer {
     font-size: 0.9em;
 }
 
-/* Responsividade básica */
+/* Estilos para a seção de fontes no rodapé */
+.sources {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.95em;
+    color: #555555;
+}
+
+.sources h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.sources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sources ul li {
+    margin-bottom: 5px;
+}
+
+.sources ul li a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sources ul li a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+/* Responsividade geral */
 @media (max-width: 768px) {
     main h1 {
         font-size: 2em;
@@ -101,42 +174,7 @@ footer {
         margin: 10px;
         padding: 15px;
     }
-}
-
-/* Adicione este bloco CSS em todos os seus arquivos CSS */
-
-.sources {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #ddd;
-    text-align: left; /* Alinhar texto à esquerda dentro da seção */
-    font-size: 0.95em;
-    color: #555555;
-}
-
-.sources h4 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #444444;
-}
-
-.sources ul {
-    list-style: none; /* Remove marcadores da lista */
-    padding: 0;
-    margin: 0;
-}
-
-.sources ul li {
-    margin-bottom: 5px;
-}
-
-.sources ul li a {
-    color: #0066cc; /* Um azul mais padrão para links */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.sources ul li a:hover {
-    color: #004499;
-    text-decoration: underline;
+    .video-section h2 {
+        font-size: 1.5em;
+    }
 }
