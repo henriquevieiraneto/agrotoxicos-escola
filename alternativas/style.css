@@ -58,6 +58,41 @@ main {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* Estilos para a seção do vídeo */
+.video-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.video-section h2 {
+    color: #2E8B57; /* Cor do tema */
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin: 0 auto;
+    max-width: 800px; /* Largura máxima para o vídeo */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
 .tema-content h2 {
     color: #2E8B57; /* Cor do tema para o título da seção */
     border-bottom: 2px solid #2E8B57;
@@ -89,6 +124,43 @@ footer {
     font-size: 0.9em;
 }
 
+/* Estilos para a seção de fontes no rodapé */
+.sources {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.95em;
+    color: #555555;
+}
+
+.sources h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.sources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sources ul li {
+    margin-bottom: 5px;
+}
+
+.sources ul li a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sources ul li a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
 /* Responsividade básica */
 @media (max-width: 768px) {
     header h1 {
@@ -105,42 +177,4 @@ footer {
         margin: 10px;
         padding: 15px;
     }
-}
-
-/* Adicione este bloco CSS em todos os seus arquivos CSS */
-
-.sources {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #ddd;
-    text-align: left; /* Alinhar texto à esquerda dentro da seção */
-    font-size: 0.95em;
-    color: #555555;
-}
-
-.sources h4 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #444444;
-}
-
-.sources ul {
-    list-style: none; /* Remove marcadores da lista */
-    padding: 0;
-    margin: 0;
-}
-
-.sources ul li {
-    margin-bottom: 5px;
-}
-
-.sources ul li a {
-    color: #0066cc; /* Um azul mais padrão para links */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.sources ul li a:hover {
-    color: #004499;
-    text-decoration: underline;
 }
