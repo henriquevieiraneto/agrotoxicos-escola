@@ -83,13 +83,12 @@ main {
     max-width: 800px; /* Largura máxima para o vídeo */
 }
 
-.video-container video {
+.video-container iframe { /* ESTILOS PARA VÍDEOS DO YOUTUBE/IFRAME */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border: none;
 }
 
@@ -150,7 +149,6 @@ footer {
     font-size: 0.9em;
 }
 
-/* Estilos para a seção de fontes no rodapé */
 .sources {
     margin-top: 20px;
     padding-top: 15px;
