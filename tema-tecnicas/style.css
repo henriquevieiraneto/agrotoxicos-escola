@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('../img/img6.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+header {
+  background-color: rgba(44, 76, 43, 0.85);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.3em;
+  color: #f1f8e9;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(80, 120, 80, 0.85);
+  padding: 10px;
+  margin: 0;
+}
+
+nav li {
+  margin: 5px 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #c5e1a5;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px;
+}
+
+.botoes-navegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.botao,
+.botao-direcional {
+  background-color: #3a5a40;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.3em;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover,
+.botao-direcional:hover {
+  background-color: #588157;
+}
+
+.fontes {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.fontes h2 {
+  color: #dce775;
+  margin-bottom: 10px;
+}
+
+.fontes ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.fontes li {
+  margin-bottom: 8px;
+}
+
+.fontes a {
+  color: #cddc39;
+  text-decoration: none;
+}
+
+.fontes a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: rgba(44, 76, 43, 0.85);
+  color: white;
+  padding: 15px;
+  margin-top: 60px;
+  text-align: center;
+}
